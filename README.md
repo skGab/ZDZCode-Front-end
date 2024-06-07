@@ -1,75 +1,73 @@
-# Nuxt 3 Minimal Starter
+<!-- TITLE -->
+<h1 align="center" color="black">Bills Management App</h1>
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+<!-- THUMB -->
+<p align="center">
+        <img src="./doc_thumb.png" width="250px" style="box-shadow: 1px 2px 4px gray;" alt="Logo do Projeto" object-fit="cover">
+</p>
 
-## Setup
+<!-- STATUS -->
+<div align="center">
 
-Make sure to install the dependencies:
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![GitHub Issues](https://img.shields.io/github/issues/skGab/ZDZCode-Front-end.svg)](https://github.com/skGab/ZDZCode-Front-end/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/skGab/ZDZCode-Front-end.svg)](https://github.com/skGab/ZDZCode-Front-end/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
-```bash
-# npm
-npm install
+</div>
 
-# pnpm
-pnpm install
+---
+<!-- INTRO -->
 
-# yarn
-yarn install
+## Índice
 
-# bun
-bun install
-```
+- [Tecnologias](#tecnologies)
+- [Funcionalidades](#features)
+- [Instruções de Uso](#glossary)
+- [Autor](#authors)
 
-## Development Server
+## Tecnologias <a name="tecnologies"></a>
 
-Start the development server on `http://localhost:3000`:
+- Vue.js
+- Nuxt 3
+- Vuetify 3
+- Sass
+- Pinia
 
-```bash
-# npm
-npm run dev
+## Funcionalidades <a name="features"></a>
 
-# pnpm
-pnpm run dev
+- Criação de contas
+- Calculo de despesas
+- Listagem de contas
+- Atualização de contas
+- Exclusão de contas
 
-# yarn
-yarn dev
+## Instruções de Uso <a name="glossary"></a>
+Lista de rotas:
+- https://localhost:7218/user/auth
+- https://localhost:7218/user/create
 
-# bun
-bun run dev
-```
+- https://localhost:7218/bills/{userEmail}
+- https://localhost:7218/bills/create
+- https://localhost:7218/bills/delete/{id}
+- https://localhost:7218/bills/update/{id}
 
-## Production
+- Faço o cadastro na aplicação para utilizar a funcionalidade de listagem de contas. Entrando como "guest", é possivel realizar somente o calculo.
+- É necessario que o servidor da API esteja rodando na porta localhost:7218, então abra o repositorio em modo solução e depois pressione F5.
+- Certifique-se de ter o Node.js instalado em seu sistema. Em seguida, execute o seguinte comando para instalar as dependências do projeto:
 
-Build the application for production:
+`npm install`
 
-```bash
-# npm
-npm run build
+<br>
 
-# pnpm
-pnpm run build
+- Para iniciar o servidor de desenvolvimento local, utilize o seguinte comando:
 
-# yarn
-yarn build
+`npm run dev`
 
-# bun
-bun run build
-```
+O sistema estará disponível em http://localhost:3000/. As alterações no código serão recarregadas automaticamente no navegador durante o desenvolvimento.
 
-Locally preview production build:
+<br>
 
-```bash
-# npm
-npm run preview
+## Autor <a name="authors"></a>
 
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- [@Gabriel Assunção](https://github.com/skGab) - Construção.
